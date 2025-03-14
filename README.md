@@ -10,5 +10,5 @@ A Python tool to fetch research papers from PubMed with at least one author affi
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/pharma-papers.git
-   cd pharma-papers
+   git clone :(https://github.com/suryaprakash-Gadi/pharma-papers-fetcher.git)
+   cd pharma-papers-fetcher
