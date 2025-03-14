@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pharma-papers"
+version = "0.1.0"
+description = "Fetch research papers with pharmaceutical/biotech affiliations from PubMed"
+authors = ["Surya Gadi <suryagadi385@gmail.com>"]  # Updated author format
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.28.0"       # For making HTTP requests to PubMed API
+xmltodict = "^0.13.0"      # For parsing PubMed XML responses
+click = "^8.1.0"           # For building the command-line interface
+tabulate = "^0.9.0"
+
+[tool.poetry.group.dev.dependencies]  # Updated to modern group syntax
+pytest = "^7.0.0"          # For unit testing
+
+[tool.poetry.scripts]
+get-papers-list = "pharma_papers.cli:main"  # Entry point for CLI
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]  # Poetry build system requirement
+build-backend = "poetry.core.masonry.api"  # Build backend
